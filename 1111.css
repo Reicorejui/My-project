@@ -1,0 +1,208 @@
+/* 清除預設邊距與統一字體 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    /* 固定在最上方 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* 導覽列高度 */
+    display: flex;
+    justify-content: space-between;
+    /* 左右分佈 */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    /* 半透明背景 */
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    /* 滑過變色 */
+}
+
+/* 如果想讓語言選單字小一點可額外調整 */
+.lang-nav a {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    /* 點選導航可以平滑滾動 */
+}
+
+/* 每個 section 佔滿螢幕高度 */
+section {
+    height: 100vh;
+    padding: 80px;
+    /* display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; */
+
+}
+
+/* 顏色方便區分區塊 */
+#home {
+    background: #333;
+
+    background-image: url("/images/P1_01\ BWG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#rejui8 {
+    background: #ffffff;
+}
+
+#rejui8 p {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#rejui8 p1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+
+#rejui8 .content img {
+    padding-top: 60px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 超出就自動換行 */
+    gap: 20px;
+    /* 圖片間距 */
+    justify-content: center;
+}
+
+#rejui82 {
+    background: #333;
+    color: #ffffff;
+}
+
+#rejui82 p {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#rejui82 p1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#rejui82 .content img {
+    padding-top: 60px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 超出就自動換行 */
+    gap: 20px;
+    /* 圖片間距 */
+    justify-content: center;
+}
+
+
+#about {
+    background: #555;
+    background-image: url("/images/P2_01\ BWG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#portfolio {
+    background: #777;
+    background-image: url("/images/P3_01BW.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contact {
+    background: #999;
+    background-image: url("/images/P4_01\ BW.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+.content_wrap {
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: flex-start;
+    gap: 50px;
+    /* 如果你不要間距就寫 0 */
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+
+#contact2 .left {
+    display: inline-block;
+    /* justify-content: center center; */
+    width: 600px;
+    height: 500px;
+    padding: 100px;
+    background-color: #ffcc00;
+    text-align: center;
+}
+
+#contact2 .right {
+    width: 600px;
+    height: 500px;
+    padding: 100px;
+    background-color: #00ff55;
+}
+
+#contact2 .left, #contact2 .right {
+    padding-top: 200px; /*內容裡面的高度*/
+
+}
+
+#contact2 .footer {
+background: #333333;
+padding-bottom: 50px;
+}
+
+#contact2 .left h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+#contact2 .left h2{
+    font-size: 20px;
+}
